@@ -2,7 +2,7 @@
 ## 实战篇
 
 ## 1 项目技术架构
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200218181057446.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dvbGZqc29u,size_16,color_FFFFFF,t_70)
+![ 项目技术架构](https://img-blog.csdnimg.cn/20200218181057446.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dvbGZqc29u,size_16,color_FFFFFF,t_70)
 
 ## 2 项目涉及关键技术
 
