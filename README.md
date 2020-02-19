@@ -109,12 +109,12 @@ MoreLikeThisQueryBuilder query = QueryBuilders.moreLikeThisQuery(
 ## 5.1基于用户的协同过滤(UserCF)
 
 *计算用户的相似度，推荐相似用户的喜好*
-(https://upload-images.jianshu.io/upload_images/21415382-4bf944aa309aa852?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/21415382-4bf944aa309aa852?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 5.2 基于物品的协同过滤(ItemCF重点)
 
 *计算物品的相似度，推荐相似度高的物品(不同于基于内容的推荐)*  
-(https://upload-images.jianshu.io/upload_images/21415382-c7cec43faa7254db?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/21415382-c7cec43faa7254db?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 5.2.1核心算法：计算同现相似度
 ![同现相似度公式](https://upload-images.jianshu.io/upload_images/21415382-34cc04c19e2361da?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -143,7 +143,7 @@ val simDF = cooccurrenceDF.map{
 
 ## 5.3.1 思想
 *找到隐藏因子，可以对user和item进行关联*
-(https://upload-images.jianshu.io/upload_images/21415382-6640b7dbb9a26eca?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![](https://upload-images.jianshu.io/upload_images/21415382-6640b7dbb9a26eca?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ## 5.3.2 算法公式
 ![隐式分解](https://upload-images.jianshu.io/upload_images/21415382-5a091130396d255a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ![损失函数最小化求解](https://upload-images.jianshu.io/upload_images/21415382-a87afceaf9624020.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
