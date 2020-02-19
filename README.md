@@ -2,7 +2,7 @@
 ## 实战篇
 
 ## 1 项目技术架构
-![ 项目技术架构](https://img-blog.csdnimg.cn/20200218181057446.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dvbGZqc29u,size_16,color_FFFFFF,t_70)
+![项目技术架构](https://upload-images.jianshu.io/upload_images/21415382-547b05f26908bcd9?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 2 项目涉及关键技术
 
@@ -37,7 +37,7 @@
 ## 3 基于人口统计学的推荐
 
 基于人口统计学的推荐机制（Demographic-based Recommendation）是一种最易于实现的推荐方法，它只是简单的根据系统用户的基本信息发现用户的相关程度，然后将相似用户喜爱的其他物品推荐给当前用户。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2020021817215227.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dvbGZqc29u,size_16,color_FFFFFF,t_70)
+![基于人口统计学的推荐](https://upload-images.jianshu.io/upload_images/21415382-be2ff3b26716dbe1?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 4 基于内容的推荐
 
@@ -51,7 +51,7 @@
  - 对于文本信息的特征提取——关键词
  - 生成分词特征向量矩阵
  - 计算相似度，常用余弦相似度
- ![在这里插入图片描述](https://img-blog.csdnimg.cn/202002181726042.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dvbGZqc29u,size_16,color_FFFFFF,t_70)
+ ![余弦相似度公式](https://upload-images.jianshu.io/upload_images/21415382-d47a3e4a0aa0dc2f?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 4.3 核心代码
 
@@ -109,15 +109,15 @@ MoreLikeThisQueryBuilder query = QueryBuilders.moreLikeThisQuery(
 ## 5.1基于用户的协同过滤(UserCF)
 
 *计算用户的相似度，推荐相似用户的喜好*
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200218172714526.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dvbGZqc29u,size_16,color_FFFFFF,t_70)
+(https://upload-images.jianshu.io/upload_images/21415382-4bf944aa309aa852?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 5.2 基于物品的协同过滤(ItemCF重点)
 
 *计算物品的相似度，推荐相似度高的物品(不同于基于内容的推荐)*  
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200218180206122.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dvbGZqc29u,size_16,color_FFFFFF,t_70)
+(https://upload-images.jianshu.io/upload_images/21415382-c7cec43faa7254db?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 5.2.1核心算法：计算同现相似度
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200218180231923.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dvbGZqc29u,size_16,color_FFFFFF,t_70)
+![同现相似度公式](https://upload-images.jianshu.io/upload_images/21415382-34cc04c19e2361da?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 5.2.2 核心算法实例
 
@@ -143,10 +143,10 @@ val simDF = cooccurrenceDF.map{
 
 ## 5.3.1 思想
 *找到隐藏因子，可以对user和item进行关联*
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200218180503252.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dvbGZqc29u,size_16,color_FFFFFF,t_70)
+(https://upload-images.jianshu.io/upload_images/21415382-6640b7dbb9a26eca?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 ## 5.3.2 算法公式
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200218180855874.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dvbGZqc29u,size_16,color_FFFFFF,t_70)
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20200218180907693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dvbGZqc29u,size_16,color_FFFFFF,t_70)
+![隐式分解](https://upload-images.jianshu.io/upload_images/21415382-5a091130396d255a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![损失函数最小化求解](https://upload-images.jianshu.io/upload_images/21415382-a87afceaf9624020.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 ## 5.3.3 核心算法实例
 
