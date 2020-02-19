@@ -2,7 +2,7 @@
 ## 实战篇
 
 ## 1 项目技术架构
-![项目技术架构](https://upload-images.jianshu.io/upload_images/21415382-547b05f26908bcd9?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![项目技术架构](https://github.com/wolf-song-ml/RecommendationSystem/blob/master/01.png)
 
 ## 2 项目涉及关键技术
 
